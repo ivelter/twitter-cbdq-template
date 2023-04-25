@@ -5,6 +5,7 @@ A Twitter bot template for posting images, similarly to how Cheap Bots Done Quic
 - Python (Any 3.7+ version is probably fine, though this project was written with Python 3.11)
 - tweepy (Run `pip install tweepy` in your cmd/terminal)
 - dotenv (`pip install python-dotenv`)
+- os and random (These modules come preinstalled with Python so it shouldn't cause you any trouble but I'll still mention it just in case)
 
 # Setting up the bot
 1) Clone the repository or download it as a .zip file and extract it. (Click on the green Code button !)
@@ -16,8 +17,8 @@ CONSUMER_SECRET="your consumer secret key"
 TOKENKEY="your token key"
 TOKENSECRET="your secret token key"
 ```
-4) Get your API keys from the dev portal and put them in the .env file
-5) Put all images you want the bot to post in the `img` folder (don't forget to remove the example image before running the script)
+4) Get your API keys from the dev portal and put them in the .env file (You can use [twurl](https://github.com/twitter/twurl) for this in case you want your dev account and your bot account to be separate! It's a lifesaver)
+5) Put all images you want the bot to post in the `./img` folder (don't forget to remove the example image before running the script)
 
 Tada! You can now run `main.py` and one random image will be posted to your Twitter account.
 Keep in mind that you still have to automate the task. If you're on a Linux distribution, you can use a tool like [Crontab](https://www.adminschoice.com/crontab-quick-reference) which allows you to repeatedly run a script at set intervals, or look into Amazon's [AWS Lambda](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/).
